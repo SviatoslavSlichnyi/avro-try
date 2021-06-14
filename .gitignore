@@ -1,6 +1,7 @@
 # files
 *.iml
 gen-manually.txt
+*.avsc
 
 # folders
 .idea
