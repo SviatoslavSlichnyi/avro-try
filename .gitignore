@@ -1,6 +1,6 @@
 # files
 *.iml
-
+gen-manually.txt
 
 # folders
 .idea

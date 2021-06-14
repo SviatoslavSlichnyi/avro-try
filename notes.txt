@@ -1,0 +1,7 @@
+# Manual generation
+
+We can also generation Java Pojo (entities) manually by avro-tools-*.jar
+
+Template:
+java -jar avro-tools-1.10.2.jar compile schema .../avro-try/src/main/resources/avsc/avroHttpRequestSchema.avsc  .../avro-try/src/main/java/
+
