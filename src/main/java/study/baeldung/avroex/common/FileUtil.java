@@ -17,14 +17,11 @@ public class FileUtil {
         return Files.readAllBytes(Constrains.avroDataFilePath);
     }
 
-    public static void saveArscToFile(String data, Path file) throws IOException {
+    public static void saveAvscToFile(String data, Path file) throws IOException {
         if (Files.notExists(Constrains.avscDirPath)) Files.createDirectory(Constrains.avscDirPath);
 
         if (Files.notExists(file)) Files.createFile(file);
-//        if (Files.notExists(Constrains.avroHttpRequestSchemaFilePath)) Files.createFile(Constrains.avroHttpRequestSchemaFilePath);
 
         Files.writeString(file, data);
-//        Files.writeString(Constrains.avroHttpRequestSchemaFilePath, avroHttpRequestSchema.toString());
-
     }
 }

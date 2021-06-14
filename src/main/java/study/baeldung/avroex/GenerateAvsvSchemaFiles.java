@@ -7,8 +7,6 @@ import study.baeldung.avroex.common.FileUtil;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class GenerateAvsvSchemaFiles {
     public static void main(String[] args) throws IOException {
@@ -43,8 +41,8 @@ public class GenerateAvsvSchemaFiles {
         System.out.println(avroHttpRequestSchema.toString());
 
         // saving to src/main/resources/avsc/
-        FileUtil.saveArscToFile(clientIdentifierSchema.toString(), Constrains.clientIdentifierSchemaFilePath);
-        FileUtil.saveArscToFile(avroHttpRequestSchema.toString(), Constrains.avroHttpRequestSchemaFilePath);
+        FileUtil.saveAvscToFile(clientIdentifierSchema.toString(), Constrains.clientIdentifierSchemaFilePath);
+        FileUtil.saveAvscToFile(avroHttpRequestSchema.toString(), Constrains.avroHttpRequestSchemaFilePath);
 
         System.out.println("----------------------");
 
